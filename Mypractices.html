@@ -1,0 +1,250 @@
+   
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UK Scholarship Application Form for refugees</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #fff;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #52b3d9;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group textarea, .form-group select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .form-group textarea {
+            resize: vertical;
+        }
+        .form-group input[type="radio"] {
+            width: auto;
+            margin-right: 10px;
+        }
+        .form-group .form-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+        .form-group .form-row div {
+            flex: 1;
+        }
+        .form-group .form-row div:first-child {
+            margin-right: 10px;
+        }
+        .form-group button {
+            background-color: #007bff;
+            color: #0f26bf;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .form-group button:hover {
+            background-color: #0056b3;
+        }
+        .form-group .optional {
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>UK Scholarship Application Form For Refugees In Kakuma, Kenya</h1>
+        <form action="#" method="post">
+            <p><b>Welcome to the UK Scholarship Application for Refugees in Kakuma, Kenya. This scholarship aims to support talented and driven individuals residing in the Kakuma Refugee Camp who seek to further their education and enhance their future prospects. We understand the unique challenges faced by refugees and are committed to providing opportunities that can help transform lives and build a brighter future.</b></p>
+
+            <!-- Personal Information -->
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div class="form-group">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+                <div class="form-group form-row">
+                    <div>
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+                    <div>
+                        <label for="gender">Gender:</label>
+                        <select id="gender" name="gender" required>
+                            <option value="">Select</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="non-binary">Non-Binary</option>
+                            <option value="prefer-not-to-say">Prefer not to say</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="nationality">Nationality:</label>
+                    <input type="text" id="nationality" name="nationality" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+                <div class="form-group form-row">
+                    <div>
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div>
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="passportNumber">Passport Number (if applicable):</label>
+                    <input type="text" id="passportNumber" name="passportNumber">
+                </div>
+            </fieldset>
+
+            <!-- Academic Information -->
+            <fieldset>
+                <legend>Academic Information</legend>
+                <div class="form-group">
+                    <label for="institution">Current Institution:</label>
+                    <input type="text" id="institution" name="institution" required>
+                </div>
+                <div class="form-group">
+                    <label for="program">Current Program of Study:</label>
+                    <input type="text" id="program" name="program" required>
+                </div>
+                <div class="form-group">
+                    <label for="yearOfStudy">Current Year of Study:</label>
+                    <select id="yearOfStudy" name="yearOfStudy" required>
+                        <option value="">Select</option>
+                        <option value="1">1st Year</option>
+                        <option value="2">2nd Year</option>
+                        <option value="3">3rd Year</option>
+                        <option value="4">Final Year</option>
+                        <option value="postgraduate">Postgraduate</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="highestQualification">Highest Qualification Achieved:</label>
+                    <input type="text" id="highestQualification" name="highestQualification">
+                </div>
+                <div class="form-group">
+                    <label for="gpa">GPA/Grades:</label>
+                    <input type="text" id="gpa" name="gpa">
+                </div>
+                <div class="form-group">
+                    <label for="relevantCourses">Relevant Courses or Subjects:</label>
+                    <input type="text" id="relevantCourses" name="relevantCourses">
+                </div>
+            </fieldset>
+
+            <!-- Financial Information -->
+            <fieldset>
+                <legend>Financial Information</legend>
+                <div class="form-group">
+                    <label for="currentIncome">Current Annual Income:</label>
+                    <input type="number" id="currentIncome" name="currentIncome" step="0.01" required>
+                </div>
+                <div class="form-group">
+                    <label for="familyIncome">Family Income (if applicable):</label>
+                    <input type="number" id="familyIncome" name="familyIncome" step="0.01">
+                </div>
+                <div class="form-group">
+                    <label for="otherAid">Other Scholarships or Financial Aid Received:</label>
+                    <input type="text" id="otherAid" name="otherAid">
+                </div>
+                <div class="form-group form-row">
+                    <div>
+                        <label for="tuitionFees">Estimated Tuition Fees:</label>
+                        <input type="number" id="tuitionFees" name="tuitionFees" step="0.01" required>
+                    </div>
+                    <div>
+                        <label for="booksSupplies">Books and Supplies:</label>
+                        <input type="number" id="booksSupplies" name="booksSupplies" step="0.01" required>
+                    </div>
+                    <div>
+                        <label for="livingExpenses">Living Expenses:</label>
+                        <input type="number" id="livingExpenses" name="livingExpenses" step="0.01" required>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Personal Statement -->
+            <fieldset>
+                <legend>Personal Statement</legend>
+                <div class="form-group">
+                    <label for="statement">Why do you deserve this scholarship?</label>
+                    <textarea id="statement" name="statement" rows="5" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="careerAspirations">Career Aspirations:</label>
+                    <textarea id="careerAspirations" name="careerAspirations" rows="3" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="impact">How will this scholarship impact your studies and future career?</label>
+                    <textarea id="impact" name="impact" rows="3" required></textarea>
+                </div>
+            </fieldset>
+
+            <!-- References -->
+            <fieldset>
+                <legend>References</legend>
+                <div class="form-group">
+                    <label for="academicReferenceName">Academic Reference Name:</label>
+                    <input type="text" id="academicReferenceName" name="academicReferenceName" required>
+                </div>
+                <div class="form-group">
+                    <label for="academicReferencePosition">Position/Title:</label>
+                    <input type="text" id="academicReferencePosition" name="academicReferencePosition" required>
+                </div>
+                <div class="form-group">
+                    <label for="academicReferenceInstitution">Institution/Organization:</label>
+                    <input type="text" id="academicReferenceInstitution" name="academicReferenceInstitution" required>
+                </div>
+                <div class="form-group">
+                    <label for="academicReferenceEmail">
+    <button <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Clickable Button in Form</title>
+        </head>
+        <body>
+            <form action="/submit" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </body>
+        </html>
+                    
+                        
+    
+</body>
+</html>
